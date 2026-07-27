@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Membership Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gym Membership Portal</h1>
+    <input type="text" id="search" placeholder="Search plans..." onkeyup="filterPlans()">
+  </header>
+
+  <main id="plans" class="plans"></main>
+
+  <section class="signup">
+    <h2>Sign Up</h2>
+    <form onsubmit="submitSignup(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <select id="membership" required>
+        <option value="">Select Membership Plan</option>
+        <option value="Basic">Basic</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+      </select>
+      <button type="submit">Join Now</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
